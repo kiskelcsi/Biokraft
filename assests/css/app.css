@@ -839,12 +839,23 @@ FOOTER
     background: #111;
     color: #fff;
     font-weight: 300;
-    padding-top: 100px;
+    padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.margin-footer {
+    position: relative;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer p {
     color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-box {
+    margin-top: 30px;
 }
 
 .footer-inner .footer-desc {
@@ -1311,6 +1322,10 @@ screen and (max-height: 375px) {
     display: block;
 }
 
+.menu-item {
+    top: 10px;
+}
+
 .dropdown-menu .dropdown-link:hover,
 .dropdown-menu .dropdown-link:focus {
     background: var(--primary) !important;
@@ -1483,6 +1498,21 @@ screen and (max-height: 375px) {
     z-index: 999;
 }
 
+.services-link h3:hover {
+    color: var(--primary);
+    transform: scale(1.1);
+}
+
+.services-link p:hover {
+    color: var(--primary);
+    transform: scale(1.1);
+}
+
+.services-link span:hover {
+    color: var(--primary);
+    transform: scale(1.1);
+}
+
 .services-link p {
     padding-bottom: 10px;
     z-index: 999;
@@ -1493,7 +1523,6 @@ screen and (max-height: 375px) {
 }
 
 .services-link:hover {
-    background: var(--primary);
     border-color: var(--primary);
     color: #fff;
     transition: all 0.4s ease;
@@ -1503,11 +1532,17 @@ screen and (max-height: 375px) {
 
 /* Termékek */
 
+.padding_prod {
+    padding: 0 !important;
+    padding: 20px !important;
+    height: 400px;
+}
+
 .ipari_vegy {
-    background-image: url(/assests/img/ipari.jfif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100%;
 }
 
 .overlay_prod {
@@ -1520,11 +1555,6 @@ screen and (max-height: 375px) {
     z-index: 2;
     overflow: hidden;
     margin: 20px;
-}
-
-.padding_prod {
-    padding: 0 !important;
-    padding: 20px !important;
 }
 
 .zindex {
