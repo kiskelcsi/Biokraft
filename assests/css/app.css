@@ -1309,7 +1309,6 @@ screen and (max-height: 375px) {
     font-size: 1rem;
     font-family: var(--btn-font);
     display: block;
-    z-index: 999;
 }
 
 .dropdown-menu .dropdown-link:hover,
@@ -1526,4 +1525,23 @@ screen and (max-height: 375px) {
 .padding_prod {
     padding: 0 !important;
     padding: 20px !important;
+}
+
+.zindex {
+    position: relative !important;
+    z-index: 999 !important;
+    transform: translate3d(0px, 0px, 0px) !important;
+    animation: growDown 300ms ease-in-out forwards;
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0);
+    }
+    80% {
+        transform: scaleY(1.1);
+    }
+    100% {
+        transform: scaleY(1);
+    }
 }
