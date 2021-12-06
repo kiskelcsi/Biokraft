@@ -37,6 +37,11 @@ html {
     .navbar {
         display: none;
     }
+    .margin-footer_sides {
+        width: 50%;
+        margin-left: auto;
+        transform: translateX(-50%);
+    }
 }
 
 a {
@@ -332,9 +337,9 @@ ul {
 /* Media qurey section */
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .container {
+    /* .container {
         margin: 0;
-    }
+    } */
 }
 
 
@@ -636,6 +641,10 @@ section {
     position: relative;
 }
 
+.about_bottom {
+    padding-bottom: 0;
+}
+
 .about-content-wrapper {
     padding: 100px;
 }
@@ -656,12 +665,14 @@ section {
 }
 
 .about-image {
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     border-top-right-radius: 135px;
     overflow: hidden;
-    height: 80%;
+    /* height: 80%; */
+    padding: 0;
+    margin: auto auto auto 0;
 }
 
 .about-image img {
@@ -1527,6 +1538,10 @@ screen and (max-height: 375px) {
     color: #fff;
     transition: all 0.4s ease;
     -webkit-transition: all 0.4s ease;
+}
+
+.contact-img {
+    width: 100% !important;
 }
 
 
