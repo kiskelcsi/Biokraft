@@ -301,7 +301,7 @@ ul {
 }
 
 .main-header.scrolled {
-    background-color: var(--primary);
+    background-color: #000;
     box-shadow: 0 0 0 1px rgb(0 0 0 / 10%), 0 2px 4px 1px rgb(0 0 0 / 18%);
     padding: 10px 10vw;
 }
@@ -320,7 +320,7 @@ ul {
 }
 
 .main-header .logo a img {
-    height: 50px;
+    height: 75px;
 }
 
 .main-header .logo a span {
@@ -885,7 +885,7 @@ FOOTER
 }
 
 .footer-logo {
-    height: 45px;
+    height: 150px;
     width: auto;
     margin-bottom: 15px;
 }
@@ -1004,7 +1004,7 @@ MEDIA QUERIES
         height: 100vh;
         font-size: 1.65rem;
         color: #fff;
-        background: var(--primary);
+        background: #000;
         -webkit-transition: opacity 0.8s 0.5s, -webkit-clip-path 1s 0.5s;
         transition: opacity 0.8s 0.5s, -webkit-clip-path 1s 0.5s;
         transition: opacity 0.8s 0.5s, clip-path 1s 0.5s;
@@ -1294,6 +1294,7 @@ screen and (max-height: 375px) {
     padding: unset;
     overflow: hidden;
     width: 100%;
+    background-color: var(--primary);
 }
 
 .dropdown-menu li {
@@ -1303,11 +1304,12 @@ screen and (max-height: 375px) {
 
 .dropdown-menu .dropdown-link {
     text-decoration: none;
-    color: #000 !important;
+    color: #fff !important;
     padding: 8px 12px !important;
     font-size: 1rem;
     font-family: var(--btn-font);
     display: block;
+    z-index: 999;
 }
 
 .dropdown-menu .dropdown-link:hover,
